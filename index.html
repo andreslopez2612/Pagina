@@ -53,49 +53,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        function count(srt, char){
-
-            var contar = 0;
-
-            for(var i = 0; i < srt.length; i++){
-                if(srt[i].toLowerCase()===char){
-                    contar++;
-                }
-            }
-
-            return contar;
-        }
-
-        function filter(array){
-            var contar = [];
-            for(var i = 0; i < array.length; i++){
-                if(isNaN(array[i])){
-                    console.log("El valor " + array[i] + " no es un numero");
-                }else{
-                    if(array[i] >= 10){
-                        contar.push(array[i]);
-                    }
-                }
-            }
-
-            return contar;
-        }
-
-        function hypotenuse(a,b){
-            var hip = "";
-            if(isNaN(a)){
-                console.log("El valor "+a+" no es un numero");
-                return;
-            }else if(isNaN(b)){
-                console.log("El valor "+b+" no es un numero");
-                return;
-            }else{
-                hip = Math.sqrt(a*a+b*b);                
-            }
-            return hip;
-        }
-    </script>
+    </div>    
 </body>
 </html>
